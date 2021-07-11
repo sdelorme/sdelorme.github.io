@@ -187,7 +187,7 @@ html {
 }
 
 body {
-  background: #312450;
+  background: #000000;
 }
 
 body.is-preload *,
@@ -306,10 +306,10 @@ h1.major {
 }
 
 h1.major:after {
-  background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-  background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-  background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-  background-image: linear-gradient(to right, #5e42a6, #b74e91);
+  background-image: -moz-linear-gradient(to right, #14213D, #FCA311);
+  background-image: -webkit-linear-gradient(to right, #14213D, #FCA311);
+  background-image: -ms-linear-gradient(to right, #14213D, #FCA311);
+  background-image: linear-gradient(to right, #14213D, #FCA311);
   -moz-transition: max-width 0.2s ease;
   -webkit-transition: max-width 0.2s ease;
   -ms-transition: max-width 0.2s ease;
@@ -2614,7 +2614,7 @@ input[type="radio"] + label:before {
   width: 2.5em;
   height: 2.5em;
   display: block;
-  background: #283618;
+  background: #14213d;
   border-radius: 100%;
   color: #fefae0;
   text-align: center;
@@ -3314,15 +3314,15 @@ table.alt tfoot {
 }
 
 .wrapper.style1 {
-  background-color: #283618;
+  background-color: #14213d;
 }
 
 .wrapper.style1-alt {
-  background-color: #606c38;
+  background-color: #000000;
 }
 
 .wrapper.style2 {
-  background-color: #606c38;
+  background-color: #000000;
 }
 
 .wrapper.style2-alt {
@@ -3441,7 +3441,7 @@ body.is-preload .wrapper.fade > .inner {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  background-color: #606c38;
+  background-color: #000000;
   cursor: default;
   padding: 1.75em 2em;
   color: #fefae0;
@@ -3494,7 +3494,7 @@ body.is-preload .wrapper.fade > .inner {
 }
 
 #header > nav > ul > li a.active {
-  color: #d4af37;
+  color: #E5E5E5;
 }
 
 @media screen and (max-width: 736px) {
@@ -3586,7 +3586,7 @@ body.is-preload .wrapper.fade > .inner {
 
 #sidebar {
   padding: 2.5em 2.5em 0.5em 2.5em;
-  background: #606c38;
+  background: #000000;
   cursor: default;
   height: 100vh;
   left: 0;

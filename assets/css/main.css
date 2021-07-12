@@ -306,10 +306,10 @@ h1.major {
 }
 
 h1.major:after {
-  background-image: -moz-linear-gradient(to right, #14213D, #FCA311);
-  background-image: -webkit-linear-gradient(to right, #14213D, #FCA311);
-  background-image: -ms-linear-gradient(to right, #14213D, #FCA311);
-  background-image: linear-gradient(to right, #14213D, #FCA311);
+  background-image: -moz-linear-gradient(to right, #14213d, #fca311);
+  background-image: -webkit-linear-gradient(to right, #14213d, #fca311);
+  background-image: -ms-linear-gradient(to right, #14213d, #fca311);
+  background-image: linear-gradient(to right, #14213d, #fca311);
   -moz-transition: max-width 0.2s ease;
   -webkit-transition: max-width 0.2s ease;
   -ms-transition: max-width 0.2s ease;
@@ -3108,7 +3108,7 @@ body.is-ie .spotlights > section {
   -webkit-transition: opacity 1s ease;
   -ms-transition: opacity 1s ease;
   transition: opacity 1s ease;
-  background: rgba(49, 36, 80, 0.9);
+  background: #fca311(49, 36, 80, 0.9);
   content: "";
   display: block;
   height: 100%;
@@ -3494,7 +3494,7 @@ body.is-preload .wrapper.fade > .inner {
 }
 
 #header > nav > ul > li a.active {
-  color: #E5E5E5;
+  color: #e5e5e5;
 }
 
 @media screen and (max-width: 736px) {

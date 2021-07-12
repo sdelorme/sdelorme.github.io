@@ -2616,7 +2616,7 @@ input[type="radio"] + label:before {
   display: block;
   background: #14213d;
   border-radius: 100%;
-  color: #fefae0;
+  color: #e5e5e5;
   text-align: center;
   line-height: 2.5em;
   margin: 0 0 1.3em 0;
@@ -2627,7 +2627,7 @@ input[type="radio"] + label:before {
 }
 
 .wrapper.style1 .icon.major:before {
-  color: #5e42a6;
+  color: #000000;
 }
 
 .wrapper.style1-alt .icon.major:before {
@@ -2643,7 +2643,7 @@ input[type="radio"] + label:before {
 }
 
 .wrapper.style3 .icon.major:before {
-  color: #dda15e;
+  color: #fca311;
 }
 
 .wrapper.style3-alt .icon.major:before {
@@ -3310,11 +3310,11 @@ table.alt tfoot {
 }
 
 .wrapper.alt {
-  background-color: #d4af37;
+  background-color: #fca311;
 }
 
 .wrapper.style1 {
-  background-color: #14213d;
+  background-color: #000000;
 }
 
 .wrapper.style1-alt {
@@ -3326,12 +3326,12 @@ table.alt tfoot {
 }
 
 .wrapper.style2-alt {
-  background-color: #3e4094;
+  background-color: #e5e5e5;
 }
 
 .wrapper.style3 {
-  background-color: #fefae0;
-  color: #bc6c25;
+  background-color: #e5e5e5;
+  color: #fca311;
 }
 
 .wrapper.style3-alt {
@@ -3444,7 +3444,7 @@ body.is-preload .wrapper.fade > .inner {
   background-color: #000000;
   cursor: default;
   padding: 1.75em 2em;
-  color: #fefae0;
+  color: #e5e5e5;
 }
 
 #header > .title {
@@ -3828,10 +3828,10 @@ body.is-ie #sidebar > .inner {
 }
 
 #sidebar nav a:after {
-  background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-  background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-  background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-  background-image: linear-gradient(to right, #5e42a6, #b74e91);
+  background-image: -moz-linear-gradient(to right, #fca311, #e5e5e5);
+  background-image: -webkit-linear-gradient(to right, #fca311, #e5e5e5);
+  background-image: -ms-linear-gradient(to right, #fca311, #e5e5e5);
+  background-image: linear-gradient(to right, #fca311, #e5e5e5);
   -moz-transition: max-width 0.2s ease;
   -webkit-transition: max-width 0.2s ease;
   -ms-transition: max-width 0.2s ease;
@@ -3919,7 +3919,7 @@ body.is-preload #sidebar nav ul li {
 
   #sidebar nav a:after {
     background-image: none;
-    background-color: #fefae0;
+    background-color: #e5e5e5;
   }
 }
 

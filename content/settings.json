@@ -1,23 +1,23 @@
 {
   "siteMetadata": {
     "language": "en",
-    "siteUrl": "https://gatsby-starter-portfolio-minimal-theme.netlify.app/",
-    "title": "Gatsby Starter for Portfolio Minimal",
-    "titleTemplate": "%s · Portfolio Minimal",
-    "description": "A Gatsby Starter Project to easily get started with Portfolio Minimal theme.",
-    "author": "Konstantin Münster",
-    "avatar": "../content/images/gatsby.png",
-    "bio": "This biography will be used in the footer area of an article and can contain some more details about the author.",
+    "siteUrl": "https://www.sethdelorme.com",
+    "title": "Seth Delorme",
+    "titleTemplate": "%s · Portfolio",
+    "description": "A glimpse into the ever-so-slightly interesting life of Seth Delorme. Just kidding, just the work stuff.",
+    "author": "Seth Delorme",
+    "avatar": "../content/images/headshot.png",
+    "bio": "Seth is a software engineer and former educator trying to make people happy with tech stuff.",
     "social": {
-      "behance": "https://behance.com",
-      "github": "https://github.com/konstantinmuenster",
-      "medium": "https://konstantinmuenster.medium.com",
-      "linkedin": "https://www.linkedin.com/in/konstantin-muenster/",
-      "mail": "mailto:mail@konstantin.digital"
+      "github": "https://github.com/sdelorme",
+      "linkedin": "https://www.linkedin.com/in/seth-delorme/",
+      "mail": "mailto:delorme.s.m@gmail.com"
     }
   },
   "siteConfiguration": {
-    "logo": { "text": "Seth Delorme" },
+    "logo": {
+      "text": "Seth Delorme"
+    },
     "navigation": {
       "header": [
         { "label": "About", "url": "/#about" },

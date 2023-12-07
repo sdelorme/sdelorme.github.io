@@ -20,13 +20,13 @@ body[data-theme='lightTheme'] {
 }
 
 body[data-theme='darkTheme'] {
-  --primary-color: #fafafa;
-  --secondary-color: #2a2926;
-  --tertiary-color: #252525;
-  --text-color: rgba(255, 255, 255, 0.87);
-  --subtext-color: #aaaaaa;
-  --background-color: #121212;
-  --card-background-color: #1c1c1c;
+  --primary-color: #fffcf2;
+  --secondary-color: #eb5e28;
+  --tertiary-color: #e63946;
+  --text-color: #ccc5b9;
+  --subtext-color: #fefae0;
+  --background-color: #252422;
+  --card-background-color: #403d39;
   --scroll-bar-color: rgba(255, 255, 255, 0.5);
   --box-shadow-color: rgba(0, 0, 0, 0.16);
   --box-shadow-hover-color: rgba(0, 0, 0, 0.32);

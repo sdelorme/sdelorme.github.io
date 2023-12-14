@@ -11,14 +11,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: GitHub Config
-        run: |
-          git config --global user.email "delorme.s.m@egmail.com"
-          git config --global user.name "sdelorme"
       - name: Checkout
         uses: actions/checkout@v2
+
       - name: Install dependencies
         run: |
           npm install
+
+      - name: Clear Gatsby Cache
+        run: npm run clean
+
       - name: Deploy
         run: npm run deploy:ci

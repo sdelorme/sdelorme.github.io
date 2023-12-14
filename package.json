@@ -7,7 +7,7 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "deploy": "gatsby clean gatsby build && gh-pages -d public",
+    "deploy": "gatsby build && gh-pages -d public",
     "deploy:ci": "gatsby build && gh-pages -d public -r https://$GH_TOKEN@github.com/sdelorme/sdelorme.github.io.git"
   },
   "engines": {

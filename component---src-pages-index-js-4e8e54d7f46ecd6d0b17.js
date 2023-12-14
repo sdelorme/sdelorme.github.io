@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_portfolio_minimal_theme=self.webpackChunkgatsby_starter_portfolio_minimal_theme||[]).push([[678],{6558:function(e,t,n){n.r(t),n.d(t,{default:function(){return l}});var r=n(7294),a=n(6784);function l(){return r.createElement(r.Fragment,null,r.createElement(a.pQ,{title:"Seth Delorme"}),r.createElement(a.T3,{useSplashScreenAnimation:!0},r.createElement(a.DH,{sectionId:"hero"}),r.createElement(a.U0,{sectionId:"contact"})))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-4e8e54d7f46ecd6d0b17.js.map

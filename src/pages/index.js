@@ -1,5 +1,10 @@
 import React from 'react'
-import { HeroSection, Page, Seo } from 'gatsby-theme-portfolio-minimal'
+import {
+  ContactSection,
+  HeroSection,
+  Page,
+  Seo,
+} from 'gatsby-theme-portfolio-minimal'
 
 export default function IndexPage() {
   return (
@@ -7,6 +12,7 @@ export default function IndexPage() {
       <Seo title="Seth Delorme" />
       <Page useSplashScreenAnimation>
         <HeroSection sectionId="hero" />
+        <ContactSection sectionId="contact" />
       </Page>
     </>
   )

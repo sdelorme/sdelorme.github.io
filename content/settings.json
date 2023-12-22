@@ -4,7 +4,7 @@
     "siteUrl": "https://www.sethdelorme.com",
     "title": "Seth Delorme",
     "titleTemplate": "%s · Portfolio",
-    "description": "A glimpse into the ever-so-slightly interesting life of Seth Delorme. Just kidding, just the work stuff.",
+    "description": "A glimpse into the ever-so-slightly interesting life of Seth Delorme.",
     "author": "Seth Delorme",
     "avatar": "../content/images/headshot.png",
     "bio": "Seth is a software engineer and former educator trying to make people happy with tech stuff.",
@@ -22,7 +22,7 @@
       "header": [
         { "label": "About", "url": "/#about" },
         { "label": "Blog", "url": "/blog" },
-        { "label": "Features", "url": "/#features" }
+        { "label": "Contact", "url": "/#contact" }
       ],
       "ctaButton": {
         "openNewTab": true,

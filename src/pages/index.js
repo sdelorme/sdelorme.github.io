@@ -7,8 +7,8 @@ import {
   Page,
   Seo,
   Animation,
+  ProjectsSection,
 } from 'gatsby-theme-portfolio-minimal'
-import HorizontalLine from '../components/HorizontalLine/horizontal-line'
 
 export default function IndexPage() {
   return (
@@ -16,11 +16,12 @@ export default function IndexPage() {
       <Seo title="Seth Delorme" />
       <Page useSplashScreenAnimation>
         <HeroSection sectionId="hero" />
-        <HorizontalLine />
-        <InterestsSection sectionId="Interests" />
-        <HorizontalLine />
-        <AboutSection sectionId="about" heading="WHO IS THIS GUY ANYWAY?" />
-        <HorizontalLine />
+        <AboutSection sectionId="about" heading="Who is this guy anyway?" />
+        <InterestsSection sectionId="Interests" heading="Current Stack" />
+        <ProjectsSection
+          sectionId="projects"
+          heading="The Aforementioned Things and Stuff (a.k.a. Things I've Coded)"
+        />
         <Animation type="waving-hand" duration={2500} iterationCount={1}>
           <ContactSection sectionId="contact" />
         </Animation>

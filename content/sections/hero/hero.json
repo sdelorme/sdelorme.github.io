@@ -1,5 +1,5 @@
 {
-  "intro": "Hey!",
+  "intro": "Cheers!",
   "heroPhoto": {
     "src": "../../images/headshot.png",
     "alt": "My Photo"
@@ -8,13 +8,13 @@
     "src": "../../images/waving-hand.png",
     "alt": "Waving Hand Emoji"
   },
-  "title": "I'm Seth Delorme",
+  "title": "I'm Seth.",
   "subtitle": {
-    "prefix": "I'm a software engineer in",
+    "prefix": "A software engineer in",
     "highlight": " Ann Arbor",
     "suffix": "."
   },
-  "description": "I liking coding stuff and things!.",
+  "description": "I like coding stuff and things!",
   "socialProfiles": {
     "from": ["LinkedIn", "Github", "Mail"],
     "showIcons": false

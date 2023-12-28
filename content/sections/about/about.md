@@ -1,14 +1,12 @@
 ---
-imageSrc: "../../images/charles-deluvio-DgoyKNgPiFQ-unsplash.jpg"
-imageAlt: "About Gatsby Theme Portfolio Minimal"
+imageSrc: '../../images/happy-potato.jpg'
+imageAlt: 'There is supposed to be a picture of something here.'
 ---
 
-Portfolio Minimal is a Gatsby Theme that creates outstanding one-pages portfolio within minutes!
+Hello there! I'm a software developer with a passion for building efficient and scalable systems that solve real-world problems. I am currently working on full stack solutions using Node.js with Express and React, both with Typescript.
 
-It has predefined sections for your bio, skills, projects, and contact details. If you are a writer on Medium, you can integrate your latest articles in a distinct section as well. While building the theme, I tried to keep the setup as simple as possible while keeping everything configurable if you like to.
+For nearly a decade, I poured my heart and soul into improving the educational experience for students in underserved communities in Chicago. As both a teacher and assistant principal, I developed invaluable skills in communication, team management, and organization. While I loved my work in education, my interest in technology and its potential to make a real difference in people's lives led me to pursue a career in software development.
 
-Using theme composition, you can easily customize the CSS theme to your own preferences - e.g. change colors, fonts, etc.
+Ultimately, my goal is to use technology to amplify human impact and solve big challenges. Have a look around and learn a little bit more about me.
 
-Last but not least, it has some cool features you can opt-in to: Dark Mode, Splash Screen, Cookie Banner, and more to find out :)
-
-Photo by <a href="https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer" aria-label="External Link"><u>Charles Deluvio</u></a> on Unsplash
+If you've made it this far -- thank you! And, yes, ChatGPT did write this.

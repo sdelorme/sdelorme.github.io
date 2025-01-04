@@ -12,9 +12,9 @@ copyright = "&copy; Copyright 2025, Seth Delorme"
 [menu]
   [[menu.main]]
     identifier = "about"
-    name = "About"
+    name = "About Me"
     title = "About"
-    url = "/about/"
+    url = "/"
     weight = -110
   [[menu.main]]
     identifier = "posts"
@@ -23,32 +23,31 @@ copyright = "&copy; Copyright 2025, Seth Delorme"
     url = "/post/"
     weight = -100
   [[menu.main]]
-    identifier = "categories"
-    name = "Categories"
-    title = "Categories"
-    url = "/categories/"
+    identifier = "projects"
+    name = "Projects"
+    title = "Projects"
+    url = "/projects/"
     weight = -90
 
 # Configuration Features
 [params]
   description = "Your meta description"      # Your meta description of the site
-  header_title = "Your Name"                 # Your header title
-  header_subtitle = "Your Creative Subtitle" # Your header subtitle
-  home_image = "/images/avatar.png"          # Path to header image starting from the static directory
+  header_title = "Seth Delorme"                 # Your header title
+  header_subtitle = "Dev | Educator >> Ann Arbor, MI" # Your header subtitle
+  home_image = "/images/headshot.jpg"          # Path to header image starting from the static directory
   recent_posts = 5                           # Max amount of recent posts to show
   mainSections = ["posts", "post", "blog"]   # Main sections to include in recent posts
   [params.style]                             # CSS style overrides
-    backgroundColor = "#f8f9fa"
-    fontColor = "#212529"
+      backgroundColor = "#f8f9fa"
+      homeImageBorderColor = "#ffffff"
+      fontFamilyBase = "Helvetica Neue"
+      fontColor = "#212529"
   [[params.social]]
     fa_icon = "fab fa-github fa-1x"          # Font Awesome icon class
-    href = "http://github.com/youruser"      # Link to associate with icon (http://, https://, mailto:)
+    href = "https://github.com/sdelorme"      # Link to associate with icon (http://, https://, mailto:)
   [[params.social]]
     fa_icon = "fab fa-linkedin-in fa-1x"
-    href = ""
+    href = "https://www.linkedin.com/in/seth-delorme/"
   [[params.social]]
-    fa_icon = "fab fa-twitter fa-1x"
-    href = ""
-  [[params.social]]
-    fa_icon = "fas fa-at fa-1x"
-    href = ""
+    fa_icon = "fas fa-envelope fa-1x"
+    href = "mailto:delorme.s.m@gmail.com"

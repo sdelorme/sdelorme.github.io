@@ -23,5 +23,12 @@
       <guid>https://sethdelorme.com/archives/</guid>
       <description></description>
     </item>
+    <item>
+      <title>Be right back.</title>
+      <link>https://sethdelorme.com/post/brb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sethdelorme.com/post/brb/</guid>
+      <description>&lt;h2 id=&#34;brb&#34;&gt;BRB&lt;/h2&gt;&#xA;&lt;p&gt;Come back soon&amp;hellip;.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Seth Delorme</title>
-    <link>http://localhost:1313/</link>
+    <link>https://sethdelorme.com:1313/</link>
     <description>Recent content on Seth Delorme</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Copyright 2025, Seth Delorme</copyright>
     <lastBuildDate>Sat, 04 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://sethdelorme.com:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Projects</title>
-      <link>http://localhost:1313/projects/</link>
+      <link>https://sethdelorme.com:1313/projects/</link>
       <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/</guid>
+      <guid>https://sethdelorme.com:1313/projects/</guid>
       <description>&lt;h2 id=&#34;my-projects&#34;&gt;My Projects&lt;/h2&gt;&#xA;&lt;p&gt;Welcome to my projects page! Below is a list of software stuff I&amp;rsquo;ve built as of late:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Be right back.</title>
-      <link>http://localhost:1313/post/brb/</link>
+      <link>https://sethdelorme.com:1313/post/brb/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/brb/</guid>
+      <guid>https://sethdelorme.com:1313/post/brb/</guid>
       <description>&lt;h2 id=&#34;brb&#34;&gt;BRB&lt;/h2&gt;&#xA;&lt;p&gt;Come back soon&amp;hellip;.&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/archives/</link>
+      <link>https://sethdelorme.com:1313/archives/</link>
       <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/archives/</guid>
+      <guid>https://sethdelorme.com:1313/archives/</guid>
       <description></description>
     </item>
   </channel>

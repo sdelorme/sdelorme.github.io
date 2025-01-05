@@ -1,4 +1,4 @@
-baseURL = "https://sdelorme.github.io/sdelorme.github.io/"
+baseURL = "https://sdelorme.github.io/"
 title = "Seth Delorme"
 languageCode = "en-us"
 theme = "devise"

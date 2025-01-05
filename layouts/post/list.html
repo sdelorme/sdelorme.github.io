@@ -1,3 +1,9 @@
-{{ define "main" }} {{ if .Content }}
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+{{ if .Content }}
 <div class="content">{{ .Content }}</div>
-{{ end }} {{- partial "category-posts.html" . -}} {{ end }}
+{{ end }} {{ range .Pages }}
+<h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+{{ else }}
+<p>No posts available.</p>
+{{ end }} {{ end }}

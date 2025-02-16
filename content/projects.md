@@ -9,4 +9,4 @@ author = "Seth Delorme"
 
 ## My Projects
 
-Welcome to my projects page! Below is a list of software stuff I've built as of late:
+Welcome to my projects page! I know what you're thinking -- where the heck are they? Those two kids I mentioned are taking up most of my time outside of 9-5 right now, so nothing is live at the moment. A few things in the pipeline that should be up end of February so come back then!

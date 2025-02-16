@@ -2,7 +2,7 @@
 author = "Seth Delorme"
 +++
 
-## About Me
+# About Me
 
 👋 I’m Seth Delorme. I live in Ann Arbor, Michigan with my wife, two pretty great tiny kids, and two doods.
 

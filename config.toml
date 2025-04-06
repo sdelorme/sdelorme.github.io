@@ -21,13 +21,19 @@ copyright = "&copy; Copyright 2025, Seth Delorme"
     name = "Posts"
     title = "Posts"
     url = "/post/"
-    weight = -100
+    weight = -90
   [[menu.main]]
     identifier = "projects"
     name = "Projects"
     title = "Projects"
     url = "/projects"
-    weight = -90
+    weight = -100
+  [[menu.main]]
+    identifier = "resume"
+    name = "Resume"
+    title = "Resume"
+    url = "/resume.pdf"
+    weight = -80
 
 # Configuration Features
 [params]

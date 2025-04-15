@@ -5,11 +5,29 @@
   {{- partial "head.html" . -}}
   <body>
     <div id="content" class="mx-auto">
+      {{ if .Params.banner }}
+      <div
+        class="banner"
+        style="background-image: url('{{ .Params.banner }}');"
+      ></div>
+      {{ end }}
       <div class="container">
         <h1>{{ .Title }}</h1>
         <div class="content">{{ .Content }}</div>
       </div>
     </div>
     {{- partial "footer.html" . -}}
+    <style>
+      .banner {
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 2rem;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+    </style>
   </body>
 </html>

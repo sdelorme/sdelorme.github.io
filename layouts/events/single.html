@@ -9,6 +9,11 @@
         <div class="content-container">
           <h1>{{ .Title }}</h1>
           <div class="content">{{ .Content }}</div>
+          {{ if .Params.form }}
+          <div class="form-container">
+            <div class="google-form">{{ .Params.form | safeHTML }}</div>
+          </div>
+          {{ end }}
         </div>
       </div>
     </div>
@@ -81,6 +86,23 @@
       .content a:hover {
         color: #4ecdc4;
         border-bottom-color: #4ecdc4;
+      }
+      .form-container {
+        margin: 1rem 0;
+        padding: 1.5rem;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 8px;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+      }
+      .google-form {
+        width: 100%;
+        min-height: 500px;
+        border: none;
+      }
+      .google-form iframe {
+        width: 100% !important;
+        min-height: 500px;
+        border: none;
       }
     </style>
   </body>

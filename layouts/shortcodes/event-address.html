@@ -1,2 +1,4 @@
-{{ if getenv "HUGO_ENV_EVENT_ADDRESS" }}{{ getenv "HUGO_ENV_EVENT_ADDRESS" }} {{
-end }}
+{{ if getenv "HUGO_ENV_EVENT_ADDRESS" }} {{ getenv "HUGO_ENV_EVENT_ADDRESS" }}
+{{ else }}
+<!-- Environment variable HUGO_ENV_EVENT_ADDRESS is not set -->
+{{ end }}

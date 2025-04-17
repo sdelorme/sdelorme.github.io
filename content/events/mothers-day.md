@@ -13,16 +13,16 @@ Join us in celebrating all the amazing women in our lives this Mother's Day! I'd
 - 📆 **Date**: Sunday, May 11th
 - 🕰️ **Time**: 4:00PM
 - 📍 **Location**: Seth & Calyn's --> {{< event-address >}}
-- **Seth's Number**: 802-989-6323
+- 📱 **Seth's Number**: 802-989-6323
 
 ### About the Event
 
 We're going with a **Mamas de Mayo** theme here. The dude's are hosting this one, so ladies sit back and relax. Seth and Tommy D will be setting up the main course:
 
-- Shrimp, Steak, and Chicken Taco bar (plenty of veggies for the meatless folk)
-- Queso Dip
-- A big ol' bottle of tequila.
-- Some corny dad jokes
+- 🌮 Shrimp, Steak, and Chicken Taco bar (plenty of veggies for the meatless folk)
+- 🧀 Queso Dip
+- 🍹 A big ol' bottle of tequila.
+- 👴 Some corny dad jokes
 
   {{< highlight >}}The rest of you good looking gentlemen, consult with the ladies and bring something delicious to go with the tacos.{{< /highlight >}}
 

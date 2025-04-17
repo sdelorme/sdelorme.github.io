@@ -6,22 +6,24 @@ draft: false
 layout: 'events/single'
 ---
 
-Join us in celebrating all the wonderful mothers in our lives! This Mother's Day, we're hosting a special event filled with love, appreciation, and joy.
+Join us in celebrating all the amazing women in our lives this Mother's Day! I'd hand the hosting duties over to Quinn, but he's currently deep in his career as a full-time Transformer, so I'm taking the reins. We hope to see everyone there! Let Seth know if you plan on coming by -- and reach out with any questions.
 
 ### Event Details
 
-- **Date**: Sunday, May 12th, 2024
-- **Time**: 11:00 AM - 2:00 PM
-- **Location**: {{< event-address >}}
+- 📆 **Date**: Sunday, May 11th
+- 🕰️ **Time**: 4:00PM
+- 📍 **Location**: Seth & Calyn's --> {{< event-address >}}
+- **Seth's Number**: 802-989-6323
 
 ### About the Event
 
-We have planned a delightful celebration that includes:
+We're going with a **Mamas de Mayo** theme here. The dude's are hosting this one, so ladies sit back and relax. Seth and Tommy D will be setting up the main course:
 
-- Brunch buffet with fresh, seasonal dishes
-- Live music performance
-- Flower arranging workshop
-- Professional family photo opportunities
-- Special gift for all mothers
+- Shrimp, Steak, and Chicken Taco bar (plenty of veggies for the meatless folk)
+- Queso Dip
+- A big ol' bottle of tequila.
+- Some corny dad jokes
 
-Make this Mother's Day unforgettable by joining us for this heartwarming celebration.
+  {{< highlight >}}The rest of you good looking gentlemen, consult with the ladies and bring something delicious to go with the tacos.{{< /highlight >}}
+
+Cheers!

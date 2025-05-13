@@ -14,7 +14,7 @@ Join us in celebrating all the amazing women in our lives this Mother's Day! I'd
 - 📆 **Date**: Sunday, May 11th
 - 🕰️ **Time**: 4:00PM
 - 📍 **Location**: Seth & Calyn's --> {{< event-address >}}
-- 📱 **Seth's Number**: 802-989-6323
+- 📱 **Seth's Number**:
 
 ### About the Event
 

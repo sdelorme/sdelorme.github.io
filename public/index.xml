@@ -2,46 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Seth Delorme</title>
-    <link>http://localhost:62640/</link>
+    <link>http://localhost:49459/</link>
     <description>Recent content on Seth Delorme</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Copyright 2025, Seth Delorme</copyright>
     <lastBuildDate>Sat, 04 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:62640/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:49459/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Projects</title>
-      <link>http://localhost:62640/projects/</link>
+      <link>http://localhost:49459/projects/</link>
       <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62640/projects/</guid>
+      <guid>http://localhost:49459/projects/</guid>
       <description>&lt;h2 id=&#34;my-projects&#34;&gt;My Projects&lt;/h2&gt;&#xA;&lt;p&gt;Welcome to my projects page! I know what you&amp;rsquo;re thinking &amp;ndash; where the heck are they? Those two kids I mentioned are taking up most of my time outside of 9-5 right now, so nothing is live at the moment. A few things in the pipeline that should be up end of February so come back then!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Be right back.</title>
-      <link>http://localhost:62640/post/brb/</link>
+      <link>http://localhost:49459/post/brb/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62640/post/brb/</guid>
+      <guid>http://localhost:49459/post/brb/</guid>
       <description>&lt;h2 id=&#34;brb&#34;&gt;BRB&lt;/h2&gt;&#xA;&lt;p&gt;Come back soon&amp;hellip;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mother&#39;s Day @ The Dolan-Delorme&#39;s</title>
-      <link>http://localhost:62640/events/mothers-day/</link>
+      <link>http://localhost:49459/events/mothers-day/</link>
       <pubDate>Sun, 12 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62640/events/mothers-day/</guid>
+      <guid>http://localhost:49459/events/mothers-day/</guid>
       <description>&lt;p&gt;Join us in celebrating all the amazing women in our lives this Mother&amp;rsquo;s Day! I&amp;rsquo;d hand the hosting duties over to Quinn, but he&amp;rsquo;s currently deep in his career as a full-time Transformer, so I&amp;rsquo;m taking the reins. We hope to see everyone there! Let Seth know if you plan on coming by &amp;ndash; and reach out with any questions. Cheers!&lt;/p&gt;&#xA;&lt;h3 id=&#34;event-details&#34;&gt;Event Details&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;📆 &lt;strong&gt;Date&lt;/strong&gt;: Sunday, May 11th&lt;/li&gt;&#xA;&lt;li&gt;🕰️ &lt;strong&gt;Time&lt;/strong&gt;: 4:00PM&lt;/li&gt;&#xA;&lt;li&gt;📍 &lt;strong&gt;Location&lt;/strong&gt;: Seth &amp;amp; Calyn&amp;rsquo;s &amp;ndash;&amp;gt; &#xA;&#xA;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;📱 &lt;strong&gt;Seth&amp;rsquo;s Number&lt;/strong&gt;:&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;about-the-event&#34;&gt;About the Event&lt;/h3&gt;&#xA;&lt;p&gt;We&amp;rsquo;re going with a &lt;strong&gt;Mamas de Mayo&lt;/strong&gt; theme here. The dude&amp;rsquo;s are hosting this one, so ladies sit back and relax. Seth and Tommy D will be setting up the main course:&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:62640/archives/</link>
+      <link>http://localhost:49459/archives/</link>
       <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62640/archives/</guid>
+      <guid>http://localhost:49459/archives/</guid>
       <description></description>
     </item>
     <item>
       <title>Playground</title>
-      <link>http://localhost:62640/playground/collector/</link>
+      <link>http://localhost:49459/playground/collector/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:62640/playground/collector/</guid>
+      <guid>http://localhost:49459/playground/collector/</guid>
       <description>&lt;p&gt;Do fun stuff here.&lt;/p&gt;</description>
     </item>
   </channel>

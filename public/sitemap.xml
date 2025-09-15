@@ -2,37 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:62640/</loc>
+    <loc>http://localhost:49459/</loc>
     <lastmod>2025-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62640/projects/</loc>
+    <loc>http://localhost:49459/projects/</loc>
     <lastmod>2025-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62640/post/brb/</loc>
+    <loc>http://localhost:49459/post/brb/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62640/tags/index/</loc>
+    <loc>http://localhost:49459/tags/index/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62640/post/</loc>
+    <loc>http://localhost:49459/post/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62640/tags/</loc>
+    <loc>http://localhost:49459/tags/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62640/events/</loc>
+    <loc>http://localhost:49459/events/</loc>
     <lastmod>2024-05-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62640/events/mothers-day/</loc>
+    <loc>http://localhost:49459/events/mothers-day/</loc>
     <lastmod>2024-05-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62640/archives/</loc>
+    <loc>http://localhost:49459/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:62640/categories/</loc>
+    <loc>http://localhost:49459/categories/</loc>
   </url><url>
-    <loc>http://localhost:62640/playground/collector/</loc>
+    <loc>http://localhost:49459/playground/collector/</loc>
   </url><url>
-    <loc>http://localhost:62640/playground/</loc>
+    <loc>http://localhost:49459/playground/</loc>
   </url>
 </urlset>

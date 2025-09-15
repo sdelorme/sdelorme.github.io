@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Index on Seth Delorme</title>
-    <link>http://localhost:1313/tags/index/</link>
+    <link>http://localhost:62640/tags/index/</link>
     <description>Recent content in Index on Seth Delorme</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Copyright 2025, Seth Delorme</copyright>
     <lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:62640/tags/index/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Posts</title>
-      <link>http://localhost:1313/post/</link>
+      <link>http://localhost:62640/post/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/</guid>
+      <guid>http://localhost:62640/post/</guid>
       <description>&lt;h2 id=&#34;wip-wip-hooray&#34;&gt;WIP WIP Hooray!&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt; See what I did there?&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Playing around with Hugo for the first time. Site updates coming soon with some Posts and Projects. Well, at least the projects, because I don&amp;rsquo;t really blog, but want to start, so we&amp;rsquo;ll see.&lt;/p&gt;</description>
     </item>
   </channel>

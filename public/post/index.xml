@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Seth Delorme</title>
-    <link>http://localhost:1313/post/</link>
+    <link>http://localhost:62640/post/</link>
     <description>Recent content in Posts on Seth Delorme</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Copyright 2025, Seth Delorme</copyright>
     <lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:62640/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Be right back.</title>
-      <link>http://localhost:1313/post/brb/</link>
+      <link>http://localhost:62640/post/brb/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/brb/</guid>
+      <guid>http://localhost:62640/post/brb/</guid>
       <description>&lt;h2 id=&#34;brb&#34;&gt;BRB&lt;/h2&gt;&#xA;&lt;p&gt;Come back soon&amp;hellip;.&lt;/p&gt;</description>
     </item>
   </channel>

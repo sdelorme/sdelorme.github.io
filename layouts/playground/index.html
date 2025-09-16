@@ -9,32 +9,6 @@
     <div class="content">{{ .Content }}</div>
     {{ end }}
     
-    <script>
-      // Function to add query parameters to playground links
-      function addQueryParamsToPlaygroundLinks() {
-        // Add click handlers to any playground links
-        document.addEventListener('click', function(event) {
-          const link = event.target.closest('a');
-          if (link && link.href) {
-            const url = new URL(link.href);
-            // Check if this is a playground link
-            if (url.pathname.includes('/playground/') && !url.search.includes('testID')) {
-              // Extract testID from the path
-              const pathParts = url.pathname.split('/');
-              const testID = pathParts[pathParts.length - 2];
-              if (testID && testID !== 'playground') {
-                // Add testID query parameter
-                url.searchParams.set('testID', testID);
-                link.href = url.toString();
-              }
-            }
-          }
-        });
-      }
-      
-      // Run when page loads
-      document.addEventListener('DOMContentLoaded', addQueryParamsToPlaygroundLinks);
-    </script>
   </body>
 </html>
 

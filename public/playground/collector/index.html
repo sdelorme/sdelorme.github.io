@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html
   lang="en-us"
-><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=49459&amp;path=livereload" data-no-instant defer></script>
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <title>Seth Delorme</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -28,5 +28,46 @@
 </head>
 <body>
     <h1>Playground</h1>
+    
+    <div class="content"><p>Do fun stuff here.</p>
+</div>
+    
+    
+    <script>
+      
+      function addQueryParamsToPlaygroundLinks() {
+        
+        const pathParts = window.location.pathname.split('/');
+        const testID = pathParts[pathParts.length - 2]; 
+        
+        
+        if (testID && testID !== 'playground' && !window.location.search.includes('testID')) {
+          const newUrl = window.location.pathname + '?testID=' + testID;
+          window.history.replaceState({}, '', newUrl);
+        }
+        
+        
+        document.addEventListener('click', function(event) {
+          const link = event.target.closest('a');
+          if (link && link.href) {
+            const url = new URL(link.href);
+            
+            if (url.pathname.includes('/playground/') && !url.search.includes('testID')) {
+              
+              const pathParts = url.pathname.split('/');
+              const testID = pathParts[pathParts.length - 2];
+              if (testID && testID !== 'playground') {
+                
+                url.searchParams.set('testID', testID);
+                link.href = url.toString();
+              }
+            }
+          }
+        });
+      }
+      
+      
+      document.addEventListener('DOMContentLoaded', addQueryParamsToPlaygroundLinks);
+    </script>
   </body>
 </html>

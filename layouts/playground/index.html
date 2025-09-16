@@ -12,16 +12,6 @@
     <script>
       // Function to add query parameters to playground links
       function addQueryParamsToPlaygroundLinks() {
-        // Get the current page name for the testID
-        const pathParts = window.location.pathname.split('/');
-        const testID = pathParts[pathParts.length - 2]; // Get the testID from the path
-        
-        // Add query parameter to current URL if not already present
-        if (testID && testID !== 'playground' && !window.location.search.includes('testID')) {
-          const newUrl = window.location.pathname + '?testID=' + testID;
-          window.history.replaceState({}, '', newUrl);
-        }
-        
         // Add click handlers to any playground links
         document.addEventListener('click', function(event) {
           const link = event.target.closest('a');
@@ -47,3 +37,4 @@
     </script>
   </body>
 </html>
+

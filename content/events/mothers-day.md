@@ -8,7 +8,7 @@ layout: 'mothers-day'
 form: '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSePatUTJNUKCBH3tc0Ytjd_0ZhYiLwMcPtLz0CBqcRU-HCxDA/viewform?embedded=true" width="315" height="1150" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>'
 ---
 
-Join us in celebrating all the amazing women in our lives this Mother's Day! Quinn and Chuck aren't quite ready to run the show yet -- but they'' provide entertainment for sure. We hope to see everyone there! Let Seth know if you plan on coming by using the RSVP forms below or textin -- and reach out with any questions. Cheers!
+Join us in celebrating all the amazing women in our lives this Mother's Day! Quinn and Chuck aren't quite ready to run the show yet -- but they will provide entertainment for sure. We hope to see everyone there! Let Seth know if you plan on coming by using the RSVP forms below or textin -- and reach out with any questions. Cheers!
 
 ### Event Details
 

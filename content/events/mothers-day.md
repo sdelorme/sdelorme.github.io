@@ -14,12 +14,12 @@ Join us in celebrating all the amazing women in our lives this Mother's Day! Qui
 
 - 📆 **Date**: Sunday, May 10th
 - 🕰️ **Time**: 4:00PM
-- 📍 **Location**: Seth & Calyn's --> {{< event-address >}}
+- 📍 **Location**: Seth & Calyn's: {{< event-address >}}
 - 📱 **Seth's Number**: 802.989.6323
 
 ### About the Event
 
-We're running back the **Mamas de Mayo** theme again this year. The dude's are hosting this one, so ladies sit back and relax. Seth and Tommy D will be setting up the main course:
+We're running back the **Mamas de Mayo** theme again this year. The dudes are hosting this one, so ladies sit back and relax. Seth and Tommy D will be setting up the main course:
 
 - 🌮 Shrimp, Carnitas, and Chicken Taco bar (plenty of veggies for the meatless folk)
 - 🧀 Queso

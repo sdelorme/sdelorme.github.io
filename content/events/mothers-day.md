@@ -1,6 +1,7 @@
 ---
 title: "Mother's Day @ The Dolan-Delorme's"
 date: 2026-05-10
+publishDate: 2026-01-01
 banner: '/images/mothers-day.png'
 draft: false
 layout: 'mothers-day'

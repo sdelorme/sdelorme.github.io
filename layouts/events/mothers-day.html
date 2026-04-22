@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html
+  lang="{{ if .Site.LanguageCode }}{{ .Site.LanguageCode }}{{ else }}en{{ end }}"
+>
+  {{- partial "head.html" . -}}
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;1,9..144,700&display=swap"
+    rel="stylesheet"
+  />
+  <body class="party-page">
+    <!-- Bunting flags -->
+    <div class="bunting" aria-hidden="true">
+      {{ range seq 18 }}
+      <div class="flag flag-{{ mod . 6 }}"></div>
+      {{ end }}
+    </div>
+
+    <!-- Floating decorations -->
+    <div class="floaters" aria-hidden="true">
+      <span class="floater" style="--x: 8%; --delay: 0s; --dur: 22s;">🌺</span>
+      <span class="floater" style="--x: 22%; --delay: 4s; --dur: 26s;">🌸</span>
+      <span class="floater" style="--x: 38%; --delay: 2s; --dur: 19s;">🌮</span>
+      <span class="floater" style="--x: 55%; --delay: 7s; --dur: 24s;">🍋</span>
+      <span class="floater" style="--x: 72%; --delay: 1s; --dur: 28s;">🪇</span>
+      <span class="floater" style="--x: 88%; --delay: 5s; --dur: 21s;">🌼</span>
+      <span class="floater" style="--x: 15%; --delay: 11s; --dur: 25s;">🥑</span>
+      <span class="floater" style="--x: 63%; --delay: 14s; --dur: 23s;">🌶️</span>
+      <span class="floater" style="--x: 45%; --delay: 9s; --dur: 27s;">🌵</span>
+    </div>
+
+    <!-- Confetti burst on load -->
+    <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+
+    <div id="content" class="mx-auto">
+      <div class="container">
+        <!-- Hero -->
+        <div class="hero">
+          {{ if .Params.banner }}
+          <div class="hero-banner-wrap">
+            <img
+              src="{{ .Params.banner | relURL }}"
+              alt="{{ .Title }}"
+              class="hero-banner"
+              onerror="this.parentElement.style.display='none'"
+            />
+          </div>
+          {{ end }}
+          <div class="hero-text">
+            <p class="eyebrow">🌮 Mamas de Mayo 🌺</p>
+            <h1>{{ .Title }}</h1>
+            <p class="tagline">
+              A party for every mom, grandma, godmother, and honorary mom in
+              our lives.
+            </p>
+          </div>
+        </div>
+
+        <!-- Countdown -->
+        <div class="countdown-card">
+          <p class="countdown-label">The party starts in…</p>
+          <div class="countdown" data-target="2026-05-10T16:00:00-04:00">
+            <div class="unit">
+              <span class="num" data-days>--</span><span class="lbl">days</span>
+            </div>
+            <div class="sep">:</div>
+            <div class="unit">
+              <span class="num" data-hours>--</span><span class="lbl">hrs</span>
+            </div>
+            <div class="sep">:</div>
+            <div class="unit">
+              <span class="num" data-mins>--</span><span class="lbl">min</span>
+            </div>
+            <div class="sep">:</div>
+            <div class="unit">
+              <span class="num" data-secs>--</span><span class="lbl">sec</span>
+            </div>
+          </div>
+          <p class="countdown-live" data-live></p>
+        </div>
+
+        <div class="content-container">
+          <div class="content">{{ .Content }}</div>
+
+          {{ if .Params.form }}
+          <div class="form-container">
+            <div class="rsvp-header">
+              <span class="rsvp-maracas">🪇</span>
+              <h2>RSVP please</h2>
+              <span class="rsvp-maracas flip">🪇</span>
+            </div>
+            <p class="rsvp-sub">
+              Drop your info so we know how many tacos to prep.
+            </p>
+            <div class="google-form">{{ .Params.form | safeHTML }}</div>
+          </div>
+          {{ end }}
+        </div>
+
+        <footer class="party-footer">
+          <p>With love, Seth &amp; Calyn 💛</p>
+        </footer>
+      </div>
+    </div>
+    {{- partial "footer.html" . -}}
+
+    <style>
+      :root {
+        --party-pink: #ff477e;
+        --party-coral: #ff6b6b;
+        --party-orange: #ffa62b;
+        --party-yellow: #ffd93d;
+        --party-teal: #4ecdc4;
+        --party-blue: #45b7d1;
+        --party-purple: #b983ff;
+        --party-cream: #fff8ec;
+        --party-ink: #2c1a3d;
+      }
+
+      body.party-page {
+        background:
+          radial-gradient(circle at 10% 0%, rgba(255, 71, 126, 0.12), transparent 40%),
+          radial-gradient(circle at 90% 10%, rgba(78, 205, 196, 0.12), transparent 40%),
+          radial-gradient(circle at 50% 100%, rgba(255, 217, 61, 0.15), transparent 50%),
+          var(--party-cream);
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+
+      /* Bunting */
+      .bunting {
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem;
+        z-index: 10;
+        pointer-events: none;
+        height: 0;
+      }
+      .bunting::before {
+        content: '';
+        position: absolute;
+        top: 20px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: rgba(44, 26, 61, 0.35);
+        border-radius: 2px;
+      }
+      .bunting .flag {
+        width: 38px;
+        height: 44px;
+        position: relative;
+        top: 18px;
+        clip-path: polygon(0 0, 100% 0, 100% 70%, 85% 100%, 50% 80%, 15% 100%, 0 70%);
+        opacity: 0.9;
+        transform-origin: top center;
+        animation: sway 4s ease-in-out infinite;
+        box-shadow: 0 6px 8px -6px rgba(0, 0, 0, 0.3);
+      }
+      .flag-0 { background: var(--party-pink); animation-delay: 0s; }
+      .flag-1 { background: var(--party-yellow); animation-delay: -0.6s; }
+      .flag-2 { background: var(--party-teal); animation-delay: -1.2s; }
+      .flag-3 { background: var(--party-orange); animation-delay: -1.8s; }
+      .flag-4 { background: var(--party-purple); animation-delay: -2.4s; }
+      .flag-5 { background: var(--party-blue); animation-delay: -3s; }
+
+      @keyframes sway {
+        0%, 100% { transform: rotate(-4deg); }
+        50% { transform: rotate(4deg); }
+      }
+
+      /* Floaters */
+      .floaters {
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 1;
+        overflow: hidden;
+      }
+      .floater {
+        position: absolute;
+        top: -60px;
+        left: var(--x);
+        font-size: 1.8rem;
+        opacity: 0.55;
+        animation: drift var(--dur) linear var(--delay) infinite;
+        filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.15));
+      }
+      @keyframes drift {
+        0% { transform: translateY(-60px) rotate(0deg); opacity: 0; }
+        10% { opacity: 0.55; }
+        50% { transform: translateY(50vh) rotate(180deg) translateX(20px); }
+        90% { opacity: 0.55; }
+        100% { transform: translateY(110vh) rotate(360deg) translateX(-10px); opacity: 0; }
+      }
+
+      /* Confetti */
+      #confetti-canvas {
+        position: fixed;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 5;
+      }
+
+      #content {
+        position: relative;
+        z-index: 2;
+      }
+
+      /* Hero */
+      .hero {
+        text-align: center;
+        margin: 2.5rem 0 1.75rem;
+      }
+      .hero-banner-wrap {
+        width: 160px;
+        height: 160px;
+        margin: 0 auto 1.25rem;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 6px solid #fff;
+        box-shadow:
+          0 0 0 4px var(--party-pink),
+          0 0 0 8px var(--party-yellow),
+          0 0 0 12px var(--party-teal),
+          0 14px 30px -10px rgba(0, 0, 0, 0.35);
+        animation: gentle-bob 5s ease-in-out infinite;
+      }
+      .hero-banner {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      @keyframes gentle-bob {
+        0%, 100% { transform: translateY(0) rotate(-2deg); }
+        50% { transform: translateY(-6px) rotate(2deg); }
+      }
+      .hero .eyebrow {
+        font-family: 'Caveat', cursive;
+        font-size: 1.9rem;
+        color: var(--party-pink);
+        margin: 0;
+        letter-spacing: 0.02em;
+        transform: rotate(-2deg);
+        display: inline-block;
+      }
+      .hero h1 {
+        font-family: 'Fraunces', serif;
+        font-size: clamp(2.2rem, 6vw, 3.4rem);
+        font-weight: 800;
+        margin: 0.3rem 0 0.6rem;
+        line-height: 1.05;
+        background: linear-gradient(100deg, var(--party-pink), var(--party-orange) 40%, var(--party-teal) 80%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        letter-spacing: -0.02em;
+      }
+      .hero .tagline {
+        font-family: 'Fraunces', serif;
+        font-style: italic;
+        color: var(--party-ink);
+        opacity: 0.75;
+        font-size: 1.05rem;
+        max-width: 480px;
+        margin: 0 auto;
+      }
+
+      /* Countdown */
+      .countdown-card {
+        background: linear-gradient(135deg, #fff 0%, #fff6e5 100%);
+        border-radius: 20px;
+        padding: 1.5rem 1.25rem;
+        margin: 1.5rem 0 2rem;
+        text-align: center;
+        border: 2px dashed var(--party-orange);
+        box-shadow: 0 10px 30px -12px rgba(255, 107, 107, 0.35);
+        position: relative;
+      }
+      .countdown-card::before,
+      .countdown-card::after {
+        content: '🌶️';
+        position: absolute;
+        top: -14px;
+        font-size: 1.5rem;
+      }
+      .countdown-card::before { left: 14px; transform: rotate(-20deg); }
+      .countdown-card::after { right: 14px; transform: rotate(20deg); content: '🌺'; }
+      .countdown-label {
+        font-family: 'Caveat', cursive;
+        font-size: 1.5rem;
+        color: var(--party-pink);
+        margin: 0 0 0.75rem;
+      }
+      .countdown {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.4rem;
+        flex-wrap: wrap;
+      }
+      .countdown .unit {
+        background: #fff;
+        border-radius: 12px;
+        padding: 0.6rem 0.85rem;
+        min-width: 72px;
+        box-shadow: 0 4px 10px -6px rgba(0, 0, 0, 0.25);
+        border-bottom: 4px solid var(--party-teal);
+      }
+      .countdown .unit:nth-child(1) { border-bottom-color: var(--party-pink); }
+      .countdown .unit:nth-child(3) { border-bottom-color: var(--party-orange); }
+      .countdown .unit:nth-child(5) { border-bottom-color: var(--party-yellow); }
+      .countdown .unit:nth-child(7) { border-bottom-color: var(--party-purple); }
+      .countdown .num {
+        font-family: 'Fraunces', serif;
+        font-weight: 800;
+        font-size: 1.8rem;
+        color: var(--party-ink);
+        display: block;
+        line-height: 1;
+        font-variant-numeric: tabular-nums;
+      }
+      .countdown .lbl {
+        font-family: 'Caveat', cursive;
+        font-size: 0.95rem;
+        color: var(--party-ink);
+        opacity: 0.65;
+      }
+      .countdown .sep {
+        font-family: 'Fraunces', serif;
+        font-weight: 800;
+        font-size: 1.6rem;
+        color: var(--party-ink);
+        opacity: 0.4;
+      }
+      .countdown-live {
+        font-family: 'Caveat', cursive;
+        font-size: 1.3rem;
+        color: var(--party-teal);
+        margin: 0.75rem 0 0;
+        min-height: 1em;
+      }
+
+      /* Main content card */
+      .content-container {
+        background: #fff;
+        padding: 2.25rem 2rem;
+        border-radius: 20px;
+        margin: 1rem 0;
+        border: 1px solid rgba(0, 0, 0, 0.06);
+        position: relative;
+        box-shadow: 0 20px 50px -20px rgba(44, 26, 61, 0.25);
+      }
+      .content-container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 6px;
+        background: linear-gradient(90deg, var(--party-pink), var(--party-orange), var(--party-yellow), var(--party-teal), var(--party-blue), var(--party-purple));
+        border-radius: 20px 20px 0 0;
+      }
+      .content {
+        color: var(--party-ink);
+        line-height: 1.65;
+        font-size: 1.02rem;
+      }
+      .content p:first-of-type {
+        font-size: 1.1rem;
+        font-family: 'Fraunces', serif;
+      }
+      .content p:first-of-type::first-letter {
+        font-family: 'Fraunces', serif;
+        font-weight: 800;
+        font-size: 3.2rem;
+        float: left;
+        line-height: 0.9;
+        padding: 0.35rem 0.55rem 0 0;
+        color: var(--party-pink);
+      }
+      .content h3 {
+        font-family: 'Fraunces', serif;
+        font-weight: 800;
+        color: var(--party-ink);
+        margin-top: 2rem;
+        padding-bottom: 0.35rem;
+        border-bottom: 3px solid var(--party-orange);
+        display: inline-block;
+      }
+      .content strong {
+        color: var(--party-pink);
+        font-weight: 700;
+      }
+      .content a {
+        color: var(--party-blue);
+        text-decoration: none;
+        border-bottom: 2px solid rgba(69, 183, 209, 0.35);
+        transition: all 0.2s ease;
+      }
+      .content a:hover {
+        color: var(--party-teal);
+        border-bottom-color: var(--party-teal);
+      }
+
+      /* Turn the "Event Details" list into cards */
+      .content h3 + ul {
+        list-style: none;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 0.75rem;
+        margin: 1rem 0 1.5rem;
+      }
+      .content h3 + ul li {
+        background: linear-gradient(135deg, #fff8ec, #fff);
+        padding: 0.85rem 1rem;
+        border-radius: 12px;
+        border-left: 5px solid var(--party-pink);
+        box-shadow: 0 4px 12px -8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s ease;
+      }
+      .content h3 + ul li:nth-child(2) { border-left-color: var(--party-orange); }
+      .content h3 + ul li:nth-child(3) { border-left-color: var(--party-teal); }
+      .content h3 + ul li:nth-child(4) { border-left-color: var(--party-purple); }
+      .content h3 + ul li:hover {
+        transform: translateY(-2px) rotate(-0.5deg);
+      }
+
+      .content h5 {
+        font-family: 'Caveat', cursive;
+        font-size: 1.35rem;
+        color: var(--party-pink);
+        background: rgba(255, 71, 126, 0.08);
+        padding: 0.6rem 1rem;
+        border-radius: 10px;
+        margin: 1.25rem 0;
+        border: 1px dashed rgba(255, 71, 126, 0.35);
+      }
+
+      /* RSVP / Form */
+      .form-container {
+        margin-top: 2rem;
+        padding: 1.5rem;
+        background: linear-gradient(135deg, rgba(255, 71, 126, 0.08), rgba(78, 205, 196, 0.08));
+        border-radius: 16px;
+        border: 2px dashed var(--party-teal);
+      }
+      .rsvp-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6rem;
+        margin-bottom: 0.25rem;
+      }
+      .rsvp-header h2 {
+        font-family: 'Fraunces', serif;
+        font-weight: 800;
+        margin: 0;
+        font-size: 1.8rem;
+        background: linear-gradient(100deg, var(--party-pink), var(--party-orange));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      .rsvp-maracas {
+        font-size: 1.6rem;
+        display: inline-block;
+        animation: shake 1.2s ease-in-out infinite;
+      }
+      .rsvp-maracas.flip {
+        animation-delay: 0.6s;
+        transform: scaleX(-1);
+      }
+      @keyframes shake {
+        0%, 100% { transform: rotate(-15deg); }
+        50% { transform: rotate(15deg); }
+      }
+      .rsvp-sub {
+        text-align: center;
+        font-family: 'Caveat', cursive;
+        font-size: 1.25rem;
+        color: var(--party-ink);
+        opacity: 0.7;
+        margin: 0 0 1rem;
+      }
+      .google-form {
+        width: 100%;
+        min-height: 500px;
+      }
+      .google-form iframe {
+        width: 100% !important;
+        min-height: 1150px;
+        border: none;
+        background: #fff;
+        border-radius: 8px;
+      }
+
+      /* Footer */
+      .party-footer {
+        text-align: center;
+        padding: 2rem 0 1rem;
+      }
+      .party-footer p {
+        font-family: 'Caveat', cursive;
+        font-size: 1.4rem;
+        color: var(--party-ink);
+        opacity: 0.7;
+        margin: 0;
+      }
+
+      /* Reduced motion */
+      @media (prefers-reduced-motion: reduce) {
+        .floater,
+        .bunting .flag,
+        .hero-banner-wrap,
+        .rsvp-maracas {
+          animation: none !important;
+        }
+      }
+
+      /* Mobile */
+      @media (max-width: 520px) {
+        .content-container { padding: 1.5rem 1.1rem; }
+        .countdown .unit { min-width: 60px; padding: 0.5rem 0.6rem; }
+        .countdown .num { font-size: 1.4rem; }
+        .bunting .flag { width: 28px; height: 34px; }
+      }
+    </style>
+
+    <script>
+      (function () {
+        // Countdown
+        var el = document.querySelector('.countdown');
+        if (el) {
+          var target = new Date(el.dataset.target).getTime();
+          var numDays = el.querySelector('[data-days]');
+          var numHours = el.querySelector('[data-hours]');
+          var numMins = el.querySelector('[data-mins]');
+          var numSecs = el.querySelector('[data-secs]');
+          var live = document.querySelector('[data-live]');
+
+          function pad(n) { return String(n).padStart(2, '0'); }
+
+          function tick() {
+            var diff = target - Date.now();
+            if (diff <= 0) {
+              numDays.textContent = '00';
+              numHours.textContent = '00';
+              numMins.textContent = '00';
+              numSecs.textContent = '00';
+              if (live) live.textContent = 'The party is here! 🎉';
+              return;
+            }
+            numDays.textContent = pad(Math.floor(diff / 86400000));
+            numHours.textContent = pad(Math.floor((diff % 86400000) / 3600000));
+            numMins.textContent = pad(Math.floor((diff % 3600000) / 60000));
+            numSecs.textContent = pad(Math.floor((diff % 60000) / 1000));
+            setTimeout(tick, 1000);
+          }
+          tick();
+        }
+
+        // Confetti burst
+        var canvas = document.getElementById('confetti-canvas');
+        if (!canvas || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        var ctx = canvas.getContext('2d');
+        function resize() {
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
+        }
+        resize();
+        window.addEventListener('resize', resize);
+
+        var colors = ['#ff477e', '#ff6b6b', '#ffa62b', '#ffd93d', '#4ecdc4', '#45b7d1', '#b983ff'];
+        var pieces = [];
+        function burst(count) {
+          for (var i = 0; i < count; i++) {
+            pieces.push({
+              x: canvas.width / 2 + (Math.random() - 0.5) * 200,
+              y: canvas.height / 3,
+              vx: (Math.random() - 0.5) * 10,
+              vy: Math.random() * -12 - 3,
+              g: 0.28,
+              size: Math.random() * 7 + 4,
+              color: colors[Math.floor(Math.random() * colors.length)],
+              rot: Math.random() * Math.PI * 2,
+              vr: (Math.random() - 0.5) * 0.25,
+              life: 0
+            });
+          }
+        }
+
+        function draw() {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          for (var i = pieces.length - 1; i >= 0; i--) {
+            var p = pieces[i];
+            p.vy += p.g;
+            p.x += p.vx;
+            p.y += p.vy;
+            p.rot += p.vr;
+            p.life++;
+            ctx.save();
+            ctx.translate(p.x, p.y);
+            ctx.rotate(p.rot);
+            ctx.fillStyle = p.color;
+            ctx.fillRect(-p.size / 2, -p.size / 3, p.size, p.size * 0.6);
+            ctx.restore();
+            if (p.y > canvas.height + 40 || p.life > 400) pieces.splice(i, 1);
+          }
+          if (pieces.length > 0) requestAnimationFrame(draw);
+        }
+
+        burst(120);
+        draw();
+        setTimeout(function () { burst(80); draw(); }, 450);
+      })();
+    </script>
+  </body>
+</html>
